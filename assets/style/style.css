@@ -1,0 +1,67 @@
+/* Réinitialisation des styles par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    height: 100vh; /* Hauteur de l'écran */
+}
+
+.maintenance-container {
+    text-align: center;
+    max-width: 800px;
+    padding: 40px 80px; /* Plus d'espace entre le titre et le logo */
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin-top: 10px;
+    font-size: 36px;
+    color: #333;
+}
+
+p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Aligne les réseaux sociaux en une ligne */
+    justify-content: center; /* Centre horizontalement */
+}
+
+.social-links li {
+    margin: 0 15px; /* Marge entre les icônes des réseaux sociaux */
+}
+
+.social-links a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #007bff; /* Couleur bleue par défaut */
+}
+
+/* Réduire la taille du logo pour l'adapter aux écrans */
+.maintenance-container img {
+    max-width: 80%; /* Réduire la taille de base du logo à 80% */
+    height: auto; /* Conserve les proportions originales du logo */
+    transition: transform 0.2s; /* Ajout de l'animation de transformation */
+}
+
+/* Ajouter l'animation de zoom au survol */
+.maintenance-container img:hover {
+    transform: scale(1.1); /* Grossissement de 10% */
+}
+
+/* Personnalisez davantage le style selon vos préférences */
